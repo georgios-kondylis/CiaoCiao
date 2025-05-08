@@ -1,16 +1,35 @@
+import React, { useState, useEffect, useContext } from "react";
+import HomePage from "./components/HomePage";
+import Navbar from "./components/Navbar/Navbar";
+import { Routes, Route, useLocation } from "react-router-dom";
+import MobileNavbar from "./components/Navbar/MobileNavbar";
+import {maxSM, maxMD, maxLG} from "./utils";
+
+export const customContext = React.createContext();
+
 function App() {
+  const [mobileNavActive, setMobileNavActive] = useState();
+
   return (
-    <div>
-      <h1 className="bg-gray-700 py-4 text-center text-white text-[2rem]">welcome tailwind in installed</h1>
-      <h2>o giorgos</h2>
-      <h2>Einai poniros</h2>
-      <h2>kai auta pou lei mi ta tros </h2>
-      <h3>KAI O PITA PITAS</h3>
-    </div>
+    <customContext.Provider value={{
+      mobileNavActive, setMobileNavActive
+    }}>
+      <div className="w-full overflow-x-hidden">
+        <MobileNavbar/>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+
+          {/* <Route path="/to Eat" element={ 
+            <div className="mx-auto w-full W_LIMIT">
+              <MenuOrder/>
+            </div>}
+          /> */}
+        </Routes>
+      </div>
+    </customContext.Provider>
   );
 }
 
 export default App;
 
-// git reset --soft HEAD~1 : to soft reset latest commit
-// alt + ^to create this ~
