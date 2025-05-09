@@ -10,13 +10,8 @@ html { scroll-behavior: smooth;}
   --BGwhite: #ffffff;
 }
 
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Space Grotesk', sans-serif;}
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Quicksand', sans-serif;;
-}
 /* ----------- NAVBAR -----------  ----------- NAVBAR -----------  ----------- NAVBAR -----------  ----------- NAVBAR ----------- */
 nav { height: 70px;  width: 100%; display: flex;  align-items: center;  background-color: var(--BG); position: relative; }
 .navOverLay { height: 70px; width: 100%; position: absolute; background-color: white; top: -80px; transition: all ease-in-out 0.3s; pointer-events: none;}
@@ -32,7 +27,6 @@ nav:hover .pseudoGlanceBG {background-color: var(--BGwhite); transition: all eas
 nav:hover .pseudoGlanceMobileBG {background-color: var(--BG);}
 /* ----------- NAVBAR -----------  ----------- NAVBAR -----------  ----------- NAVBAR -----------  ----------- NAVBAR ----------- */
 
-
 .W_LIMIT { @apply max-w-[1450px] }
 .mainPX { @apply px-[30px] max-sm:px-[15px]}
 .transition1 { @apply transition-all ease-in-out duration-300 }
@@ -43,3 +37,5 @@ nav:hover .pseudoGlanceMobileBG {background-color: var(--BG);}
 .headerSplit {@apply text-[35px] mx-auto mb-[50px] mt-[80px]}
 
 .navLink { @apply text-[#ffffff] hover:text-[#F5E6A0] cursor-pointer hover:scale-[1.1] hover:translate-y-[-1px] transition1 } 
+
+.socMedia {@apply hover:text-burgundy hover:scale-[1.1] hover:translate-y-[-5px] transition1}
