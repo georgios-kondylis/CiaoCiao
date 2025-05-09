@@ -34,7 +34,7 @@ nav:hover .pseudoGlanceMobileBG {background-color: var(--BG);}
 
 .BG {@apply bg-[#fbfbfb]}
 .burgundy {@apply bg-[#6f2323]}
-.headerSplit {@apply text-[35px] mx-auto mb-[50px] mt-[80px]}
+.headerSplit {@apply text-[35px] mx-auto mt-[30px] mb-[60px] flex justify-center w-full items-center}
 
 .navLink { @apply text-[#ffffff] hover:text-[#F5E6A0] cursor-pointer hover:scale-[1.1] hover:translate-y-[-1px] transition1 } 
 

@@ -20,9 +20,9 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
 
-          {/* <Route path="/to Eat" element={ 
+          {/* <Route path="/food" element={ 
             <div className="mx-auto w-full W_LIMIT">
-              <MenuOrder/>
+              <Food/>
             </div>}
           /> */}
         </Routes>
